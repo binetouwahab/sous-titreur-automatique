@@ -221,3 +221,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Projet P1 : fichiers médias lourds ---
+*.mp4
+*.mkv
+*.mov
+*.wav
+*.mp3
+*.m4a
+!**/.gitkeep
