@@ -231,3 +231,4 @@ __marimo__/
 *.m4a
 !**/.gitkeep
 outputs/*_sauvegarde.srt
+outputs/*.srt
