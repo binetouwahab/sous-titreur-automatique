@@ -230,3 +230,4 @@ __marimo__/
 *.mp3
 *.m4a
 !**/.gitkeep
+outputs/*_sauvegarde.srt
