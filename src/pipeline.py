@@ -45,3 +45,8 @@ def executer_pipeline(chemin_video, taille_modele="small"):
     print(f"Transcription terminée en {duree} secondes.")
     print(f"Nombre de segments détectés : {len(segments)}")
 
+
+    # Étape 3 : générer le fichier SRT
+    print("\n3. Génération des sous-titres...")
+    segments_vers_srt(segments, chemin_srt)
+    print(f"Fichier SRT créé : {chemin_srt}")
