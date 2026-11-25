@@ -1,16 +1,17 @@
+
 1
 00:00:01,330 --> 00:00:05,142
 Bonjour à tous, j'espère que vous allez
-bien. Mon nom c'est Cyndole Sek, étudiant
+bien. Mon nom c'est Sine Ndoye Seck,
 
 2
 00:00:05,142 --> 00:00:08,436
-dans le référentiel intelligence
-artificielle ici à l'École du Côte de
+étudiant dans le référentiel intelligence
+artificielle ici à l'École du Code
 
 3
 00:00:08,436 --> 00:00:09,330
-Sonatelle Académie.
+Sonatel Académie.
 
 4
 00:00:09,330 --> 00:00:13,215
@@ -19,27 +20,27 @@ l'intelligence artificielle parce qu'on
 
 5
 00:00:13,215 --> 00:00:17,302
-sait tout ce que l'IA s'est imposé dans
-notre vie et aujourd'hui au cœur de l'une
+sait tous ce que l'IA s'est imposé dans
+notre vie et aujourd'hui
 
 6
 00:00:17,302 --> 00:00:20,330
-des plus grandes révolutions
-technologiques de notre époque.
+au cœur de l'une des plus grandes
+révolutions technologiques de notre époque
 
 7
 00:00:20,330 --> 00:00:24,144
-Lentement considéré comme une technologie
-réservée aux chercheurs ou bien aux plus
+Longtemps considérée comme une technologie
+réservée aux chercheurs
 
 8
 00:00:24,144 --> 00:00:27,865
-grandes entreprises, elle est désormais
-quelque chose qui est présent dans notre
+ou bien aux plus grandes entreprises,
+elle est désormais quelque chose
 
 9
 00:00:27,865 --> 00:00:28,330
-quotidien,
+qui est présente dans notre quotidien,
 
 10
 00:00:28,330 --> 00:00:32,466
@@ -48,13 +49,13 @@ recherche, dans les établissements de
 
 11
 00:00:32,466 --> 00:00:35,330
-santé, partout et même dans le secteur des
-transports.
+santé, partout et même dans le secteur
+des transports.
 
 12
 00:00:35,330 --> 00:00:40,039
 Donc c'est un secteur qui mérite de plus
-amples attentions et qu'on étudie encore
+amples attentions et qu'on l'étudie encore
 
 13
 00:00:40,039 --> 00:00:40,330

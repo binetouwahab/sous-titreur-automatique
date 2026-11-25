@@ -126,3 +126,51 @@ def incruster_sous_titres(chemin_video, chemin_srt, chemin_sortie):
     subprocess.run(commande, check=True)
 
     print(f"Vidéo sous-titrée créée : {sortie}")
+
+
+def verifier_srt(chemin_srt):
+    """Vérifie les règles de longueur et de nombre de lignes d'un SRT."""
+
+    chemin_srt = Path(chemin_srt)
+
+    if not chemin_srt.is_file():
+        raise FileNotFoundError(f"Fichier SRT introuvable : {chemin_srt}")
+
+    with open(chemin_srt, "r", encoding="utf-8") as fichier:
+        contenu = fichier.read().strip()
+
+    erreurs = []
+
+    blocs = contenu.split("\n\n")
+
+    for numero_bloc, bloc in enumerate(blocs, start=1):
+        lignes = bloc.splitlines()
+
+        if len(lignes) < 3:
+            erreurs.append(
+                f"Bloc {numero_bloc} : bloc SRT incomplet."
+            )
+            continue
+
+        lignes_texte = lignes[2:]
+
+        if len(lignes_texte) > 2:
+            erreurs.append(
+                f"Bloc {numero_bloc} : plus de 2 lignes de texte."
+            )
+
+        for numero_ligne, ligne in enumerate(lignes_texte, start=1):
+            if len(ligne) > 42:
+                erreurs.append(
+                    f"Bloc {numero_bloc}, ligne {numero_ligne} : "
+                    f"{len(ligne)} caractères (maximum 42)."
+                )
+
+    if erreurs:
+        print("Des problèmes ont été détectés :")
+        for erreur in erreurs:
+            print("-", erreur)
+        return False
+
+    print("Fichier SRT valide : toutes les règles sont respectées.")
+    return True
