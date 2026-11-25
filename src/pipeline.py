@@ -50,3 +50,13 @@ def executer_pipeline(chemin_video, taille_modele="small"):
     print("\n3. Génération des sous-titres...")
     segments_vers_srt(segments, chemin_srt)
     print(f"Fichier SRT créé : {chemin_srt}")
+
+    # Étape 4 : incruster les sous-titres dans la vidéo
+    print("\n4. Incrustation des sous-titres dans la vidéo...")
+    incruster_sous_titres(
+        chemin_video,
+        chemin_srt,
+        chemin_video_finale
+    )
+
+    print(f"Vidéo finale créée : {chemin_video_finale}")
