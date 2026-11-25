@@ -1,0 +1,64 @@
+1
+00:00:01,330 --> 00:00:04,330
+Bonjour à tous, j'espère que vous allez
+bien, donc mon nom c'est Synda Esek,
+
+2
+00:00:04,330 --> 00:00:08,172
+étudiant dans la référentielle
+intelligence artificielle ici à l'École du
+
+3
+00:00:08,172 --> 00:00:09,330
+Côte Sonatel Académie.
+
+4
+00:00:09,330 --> 00:00:13,086
+Donc je suis là pour vous parler un peu de
+l'intelligence artificielle parce qu'on
+
+5
+00:00:13,086 --> 00:00:15,330
+sait tout ce que l'IA s'est imposé dans
+notre vie
+
+6
+00:00:15,330 --> 00:00:18,881
+et aujourd'hui au coeur de plus grande, de
+l'une des plus grandes évolutions
+
+7
+00:00:18,881 --> 00:00:20,330
+technologiques de notre époque.
+
+8
+00:00:20,330 --> 00:00:23,756
+L'antenne qu'on se dirait comme une
+technologie réservée aux chercheurs ou
+
+9
+00:00:23,756 --> 00:00:25,330
+bien aux plus grandes entreprises,
+
+10
+00:00:25,330 --> 00:00:28,330
+elle est désormais quelque chose qui est
+présente dans notre quotidien,
+
+11
+00:00:28,330 --> 00:00:32,616
+dans nos téléphones, dans nos moteurs de
+recherche, dans les établissements de
+
+12
+00:00:32,616 --> 00:00:33,330
+santé partout
+
+13
+00:00:33,330 --> 00:00:35,330
+et même dans le secteur des transports.
+
+14
+00:00:35,330 --> 00:00:40,330
+C'est un secteur qui mérite de plus amples
+attention et qu'on l'étudie encore plus.
