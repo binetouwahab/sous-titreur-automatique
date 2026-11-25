@@ -1,5 +1,7 @@
-
 import textwrap
+import subprocess
+import shutil
+from pathlib import Path
 
 
 def _secondes_vers_srt(secondes):
@@ -83,3 +85,44 @@ def segments_vers_srt(segments, chemin_srt):
     # Écrire tous les sous-titres dans le fichier SRT
     with open(chemin_srt, "w", encoding="utf-8") as fichier:
         fichier.write("\n\n".join(blocs) + "\n")
+
+
+
+def incruster_sous_titres(chemin_video, chemin_srt, chemin_sortie):
+    """Incruste les sous-titres SRT dans une vidéo avec FFmpeg."""
+
+    # Vérifier que FFmpeg est disponible
+    if shutil.which("ffmpeg") is None:
+        raise FileNotFoundError("FFmpeg n'est pas installé ou accessible.")
+
+    # Transformer les chemins en objets Path
+    video = Path(chemin_video)
+    srt = Path(chemin_srt)
+    sortie = Path(chemin_sortie)
+
+    # Vérifier que les fichiers d'entrée existent
+    if not video.is_file():
+        raise FileNotFoundError(f"Vidéo introuvable : {video}")
+
+    if not srt.is_file():
+        raise FileNotFoundError(f"Fichier SRT introuvable : {srt}")
+
+    # Préparer le chemin du fichier SRT pour FFmpeg
+    chemin_filtre = srt.resolve().as_posix()
+    chemin_filtre = chemin_filtre.replace(":", r"\:")
+    chemin_filtre = chemin_filtre.replace("'", r"\'")
+
+    # Construire la commande FFmpeg
+    commande = [
+        "ffmpeg",
+        "-y",
+        "-i", str(video),
+        "-vf", f"subtitles='{chemin_filtre}'",
+        "-c:a", "copy",
+        str(sortie)
+    ]
+
+    # Exécuter FFmpeg
+    subprocess.run(commande, check=True)
+
+    print(f"Vidéo sous-titrée créée : {sortie}")
